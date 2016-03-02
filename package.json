@@ -24,6 +24,7 @@
     "lodash": "^4.5.0",
     "morgan": "^1.6.1",
     "nodemon": "^1.8.1",
+    "request-promise": "^2.0.1",
     "xml2js": "^0.4.16"
   },
   "devDependencies": {

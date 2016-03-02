@@ -6,9 +6,9 @@ import _ from 'lodash';
 import {parseString as parseStringCallback} from 'xml2js';
 import {stripPrefix} from 'xml2js/lib/processors';
 
-import fs from 'fs';
+import fetchXmanData from './fetch';
 
-const readFile = Promise.promisify(fs.readFile);
+
 const parseString = Promise.promisify(parseStringCallback);
 
 const xml2jsOptions = {
@@ -26,17 +26,21 @@ let lastRawData = {
 };
 
 export function getLastRawData() {
-  return lastRawData.rawData;
+  if(lastRawData.rawData !== '') {
+    return Promise.resolve(lastRawData.rawData);
+  }
+  return fetchXmanData();
 }
 
 // Async
 export function getXmanData() {
-  return fileToXml().then(xmlToJS);
+  return fetchXmanData().then(xmlToJS);
 }
 
 
 export function xmlToJS(xmlString) {
   lastRawData.lastFetched = Date.now();
+  lastRawData.rawData = xmlString;
   return parseString(xmlString, xml2jsOptions)
     .then(formatJs);
 }
@@ -46,15 +50,22 @@ const extractArrivalSequence = (rawJS) => _.get(rawJS, 'arrivalSequenceCollectio
 const extractMessageTime = (rawJS) => _.get(extractArrivalSequence(rawJS), 'messageTime');
 const extractRunwaySequence = (rawJS) => _.get(extractArrivalSequence(rawJS), 'airport.runwaySequence');
 
-const extractSequencingPoint = (flight) => _.get(flight, 'sequencingPoint', []);
+const extractSequencingPoints = (flight) => _.get(flight, 'sequencingPoint', []);
+
+const extractPointByType = (type) => (flight) => _.find(extractSequencingPoints(flight), {type}, {});
+const extractCop = (flight) => extractPointByType('COP')(flight);
+
+
+const extractTotalDelay = (flight) => _.get(extractPointByType('ARR_RUNWAY')(flight), 'delay');
+
 
 const fliesOver = (navPoint) => (flight) => {
-  const seqPoints = _.map(extractSequencingPoint(flight), 'point.base:name');
+  const seqPoints = _.map(extractSequencingPoints(flight), 'point.base:name');
   return _.includes(seqPoints, navPoint);
 };
 
 const copAfter = (maxTimeAtCop) => (flight) => {
-  const cop = _.find(extractSequencingPoint(flight), {type: 'COP'});
+  const cop = extractCop(flight);
 
   const timeAtCop = Date.parse(_.get(cop, 'timeatpoint.estimated', 0));
 
@@ -62,7 +73,12 @@ const copAfter = (maxTimeAtCop) => (flight) => {
   debug(timeAtCop + ' / ' + maxTimeAtCop);
 
   return timeAtCop > maxTimeAtCop;
-}
+};
+
+const extractAdvisory = (flight) => {
+
+};
+
 
 
 
@@ -81,6 +97,7 @@ const extractFlights = (rawJS) => {
     .filter(fliesOver('ABNUR'))
     .filter(copAfter(messageTime))
     .sortBy('tldt')
+    .map(f => _.merge({}, f, {totalDelay: extractTotalDelay(f)}))
     .value();
 };
 
@@ -93,10 +110,4 @@ function formatJs(rawJS) {
     total: flights.length,
     flights
   };
-}
-
-
-function fileToXml() {
-  debug('CALLED !!');
-  return readFile('xman.sample.xml');
 }

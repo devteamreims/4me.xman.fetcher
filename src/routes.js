@@ -17,5 +17,10 @@ export function getRoutes() {
 
 
 function rawController(req, res, next) {
-  res.send(getLastRawData());
+  getLastRawData()
+    .then((xml) => {
+      res.set('Content-Type', 'text/xml');
+      res.send(xml)
+    })
+    .catch(next);
 }

@@ -11,5 +11,7 @@ export default function getRoutes() {
 }
 
 function xmanData(req, res, next) {
-  getXmanData().then((data) => res.send(data));
+  getXmanData()
+    .then((data) => res.send(data))
+    .catch(next);
 }
