@@ -1,0 +1,1556 @@
+<?xml version="1.0"?>
+<!-- Created by GO Publisher. Snowflake Software Ltd. (http://www.snowflakesoftware.com). --><asdd:arrivalSequenceCollection xmlns:asdd="http://ArrivalSequenceDataDefinitions" xmlns:base="http://www.fixm.aero/base/1.0" xmlns:fx="http://www.fixm.aero/fx/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ArrivalSequenceDataDefinitions arrivalSequence/ArrivalSequenceSchemaV1.3.xsd">
+  <asdd:arrivalSequence messageTime="2016-03-02T13:53:46Z">
+    <asdd:airport airport="EGLL" delayCredible="true" eatsInForce="false" landingRate="36" timeHorizon="PT1H25M0S">
+      <asdd:runwaySequence runway="09R/27L">
+        <asdd:sequencedFlight adep="EDDS" ades="EGLL" aircraftType="A319" arcid="GWI2460" ifplid="AA50313230" runwayDirection="27" sequenceNumber="50" ssr="2543" star="LAM3A" tldt="2016-03-02T13:43:08Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDS"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:53:00Z" target="2016-03-02T11:53:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="SASKI"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:52:51Z" target="2016-03-02T12:52:51Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:31:52Z" target="2016-03-02T13:31:52Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:43:08Z" target="2016-03-02T13:43:08Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDT" ades="EGLL" aircraftType="A319" arcid="GWI8462" ifplid="AA50313775" runwayDirection="27" sequenceNumber="75" ssr="1352" star="LAM3A" tldt="2016-03-02T14:19:23Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDT"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:17:00Z" target="2016-03-02T12:17:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:26:47Z" target="2016-03-02T13:26:47Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M21S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T14:08:07Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M21S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:19:23Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="RJTT" ades="EGLL" aircraftType="B77W" arcid="JAL43" eobt="2016-03-02T02:35:00Z" ifplid="AA50314924" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:01:45Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="RJTT"/>
+            <asdd:timeatpoint monitored="2016-03-02T02:44:00Z" target="2016-03-02T02:44:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="LARDI"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:03:11Z" target="2016-03-02T14:06:11Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M37S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:34:52Z" target="2016-03-02T14:50:29Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H18M37S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:43:08Z" target="2016-03-02T15:01:45Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="WSSS" ades="EGLL" aircraftType="A388" arcid="SIA308" eobt="2016-03-02T01:10:00Z" ifplid="AA50315007" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:08:35Z" wakeCategory="SUPER">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="WSSS"/>
+            <asdd:timeatpoint monitored="2016-03-02T01:10:00Z" target="2016-03-02T01:10:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:24:46Z" target="2016-03-02T14:27:46Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M27S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:42:52Z" target="2016-03-02T14:57:19Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H17M27S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:51:08Z" target="2016-03-02T15:08:35Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDK" ades="EGLL" aircraftType="A319" arcid="GWI464" eobt="2016-03-02T13:39:00Z" ifplid="AA50315476" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:14:57Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="true" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="NIL" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDK"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:20:17Z" target="2016-03-02T14:20:17Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="COA"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:45:22Z" target="2016-03-02T14:45:22Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:03:41Z" target="2016-03-02T15:03:41Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:14:57Z" target="2016-03-02T15:14:57Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDH" ades="EGLL" aircraftType="A320" arcid="EWG16U" ifplid="AA50316135" runwayDirection="27" ssr="1333" star="LAM3A" tldt="2016-03-02T14:32:28Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDH"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:53:00Z" target="2016-03-02T12:53:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:47:08Z" target="2016-03-02T13:47:08Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M31S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:08:41Z" target="2016-03-02T14:21:12Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M31S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:19:57Z" target="2016-03-02T14:32:28Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDL" ades="EGLL" aircraftType="CRJ9" arcid="EWG2N" eobt="2016-03-02T13:35:00Z" ifplid="AA50317214" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:18:43Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="true" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="NIL" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDL"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:22:45Z" target="2016-03-02T14:22:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="COA"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:48:21Z" target="2016-03-02T14:48:21Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:07:27Z" target="2016-03-02T15:07:27Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:18:43Z" target="2016-03-02T15:18:43Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LGAV" ades="EGLL" aircraftType="A321" arcid="AEE2" eobt="2016-03-02T11:23:00Z" ifplid="AA50317763" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:23:48Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LGAV"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:35:00Z" target="2016-03-02T11:35:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H1M26S" type="COP">
+            <asdd:point base:name="COA"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:38:37Z" target="2016-03-02T14:41:37Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H9M40S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:02:52Z" target="2016-03-02T15:12:32Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M40S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:11:08Z" target="2016-03-02T15:23:48Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="RKSI" ades="EGLL" aircraftType="B788" arcid="BAW18" ifplid="AA50317929" runwayDirection="27" sequenceNumber="80" ssr="3526" star="LAM3A" tldt="2016-03-02T14:26:06Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="RKSI"/>
+            <asdd:timeatpoint monitored="2016-03-02T02:03:00Z" target="2016-03-02T02:03:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:37:56Z" target="2016-03-02T13:37:56Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M13S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:00:37Z" target="2016-03-02T14:14:50Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M13S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:11:53Z" target="2016-03-02T14:26:06Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LEPA" ades="EGLL" aircraftType="A320" arcid="IBS3614" eobt="2016-03-02T12:32:00Z" ifplid="AA50317990" runwayDirection="27" star="BIG4B" tldt="2016-03-02T15:26:18Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LEPA"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:50:00Z" target="2016-03-02T12:50:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H1M33S" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:51:23Z" target="2016-03-02T14:52:56Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H7M0S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:09:24Z" target="2016-03-02T15:16:24Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H8M33S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:17:45Z" target="2016-03-02T15:26:18Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="RJTT" ades="EGLL" aircraftType="B77W" arcid="ANA211" eobt="2016-03-02T02:40:00Z" ifplid="AA50318051" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:03:28Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="RJTT"/>
+            <asdd:timeatpoint monitored="2016-03-02T02:48:00Z" target="2016-03-02T02:48:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="LARDI"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:06:44Z" target="2016-03-02T14:09:44Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M14S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:37:58Z" target="2016-03-02T14:52:12Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H17M14S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:46:14Z" target="2016-03-02T15:03:28Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="RJAA" ades="EGLL" aircraftType="B772" arcid="BAW6" eobt="2016-03-02T02:10:00Z" ifplid="AA50318624" runwayDirection="27" star="LAM3A" tldt="2016-03-02T14:53:40Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="RJAA"/>
+            <asdd:timeatpoint monitored="2016-03-02T02:29:00Z" target="2016-03-02T02:29:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="LARDI"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:57:48Z" target="2016-03-02T14:00:48Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M59S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:29:25Z" target="2016-03-02T14:42:24Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M59S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:37:41Z" target="2016-03-02T14:53:40Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LSGG" ades="EGLL" aircraftType="A320" arcid="SWR37M" ifplid="AA50318994" runwayDirection="27" sequenceNumber="59" ssr="5762" star="BIG4B" tldt="2016-03-02T13:56:39Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LSGG"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:05:00Z" target="2016-03-02T12:05:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:05:49Z" target="2016-03-02T13:05:49Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:46:45Z" target="2016-03-02T13:46:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:56:39Z" target="2016-03-02T13:56:39Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LIRF" ades="EGLL" aircraftType="A320" arcid="BAW45T" ifplid="AA50319013" runwayDirection="27" sequenceNumber="58" ssr="4044" star="BIG4B" tldt="2016-03-02T13:55:24Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LIRF"/>
+            <asdd:timeatpoint monitored="2016-03-02T10:53:00Z" target="2016-03-02T10:53:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:03:27Z" target="2016-03-02T13:03:27Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:45:30Z" target="2016-03-02T13:45:30Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:55:24Z" target="2016-03-02T13:55:24Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EKCH" ades="EGLL" aircraftType="A320" arcid="SAS503" ifplid="AA50319721" runwayDirection="27" sequenceNumber="46" ssr="0751" star="LAM3A" tldt="2016-03-02T13:37:05Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EKCH"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:30:00Z" target="2016-03-02T11:30:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:43:38Z" target="2016-03-02T12:43:38Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M3S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:25:52Z" target="2016-03-02T13:25:49Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M3S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:37:08Z" target="2016-03-02T13:37:05Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="SKBO" ades="EGLL" aircraftType="A332" arcid="AVA120" ifplid="AA50319850" runwayDirection="27" ssr="7444" star="OCK4B" tldt="2016-03-02T14:45:35Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="SKBO"/>
+            <asdd:timeatpoint monitored="2016-03-02T04:11:00Z" target="2016-03-02T04:11:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M44S" type="COP">
+            <asdd:point base:name="REVTU"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:03:11Z" target="2016-03-02T14:06:11Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M38S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:23:52Z" target="2016-03-02T14:36:30Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M38S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:29:57Z" target="2016-03-02T14:45:35Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="ENGM" ades="EGLL" aircraftType="B738" arcid="SAS805" eobt="2016-03-02T12:10:00Z" ifplid="AA50319982" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:11:35Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="ENGM"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:34:00Z" target="2016-03-02T12:34:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="LARDI"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:12:23Z" target="2016-03-02T14:15:23Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M30S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:45:49Z" target="2016-03-02T15:00:19Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H17M30S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:54:05Z" target="2016-03-02T15:11:35Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="KSFO" ades="EGLL" aircraftType="B772" arcid="UAL930" ifplid="AA50320223" runwayDirection="27" sequenceNumber="54" ssr="5440" star="BNN1B" tldt="2016-03-02T13:49:01Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="KSFO"/>
+            <asdd:timeatpoint monitored="2016-03-02T03:38:00Z" target="2016-03-02T03:38:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="LIFFY"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:45:47Z" target="2016-03-02T12:45:47Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M7S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:38:25Z" target="2016-03-02T13:38:18Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M7S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:49:08Z" target="2016-03-02T13:49:01Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="VOHS" ades="EGLL" aircraftType="B789" arcid="BAW276" eobt="2016-03-02T04:00:00Z" ifplid="AA50320598" runwayDirection="27" star="LAM3A" tldt="2016-03-02T14:42:09Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="VOHS"/>
+            <asdd:timeatpoint monitored="2016-03-02T04:34:00Z" target="2016-03-02T04:34:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H1M49S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:01:00Z" target="2016-03-02T14:04:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H10M58S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:19:55Z" target="2016-03-02T14:30:53Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M58S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:28:11Z" target="2016-03-02T14:42:09Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="OMDB" ades="EGLL" aircraftType="A388" arcid="UAE29" ifplid="AA50320609" runwayDirection="27" sequenceNumber="49" ssr="2227" star="LAM3A" tldt="2016-03-02T13:40:08Z" wakeCategory="SUPER">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="OMDB"/>
+            <asdd:timeatpoint monitored="2016-03-02T05:58:00Z" target="2016-03-02T05:58:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:46:46Z" target="2016-03-02T12:46:46Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:28:52Z" target="2016-03-02T13:28:52Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:40:08Z" target="2016-03-02T13:40:08Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LIPE" ades="EGLL" aircraftType="A319" arcid="BAW34BQ" ifplid="AA50320957" runwayDirection="27" sequenceNumber="64" ssr="7512" star="BIG4B" tldt="2016-03-02T14:03:48Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LIPE"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:40:00Z" target="2016-03-02T11:40:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:12:45Z" target="2016-03-02T13:12:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M8S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T13:53:54Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M8S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:03:40Z" target="2016-03-02T14:03:48Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="KSAN" ades="EGLL" aircraftType="B772" arcid="BAW72A" ifplid="AA50320967" runwayDirection="27" sequenceNumber="63" ssr="5402" star="OCK2F" tldt="2016-03-02T14:01:39Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="KSAN"/>
+            <asdd:timeatpoint monitored="2016-03-02T03:53:00Z" target="2016-03-02T03:53:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="BAKUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:02:26Z" target="2016-03-02T13:02:26Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:52:34Z" target="2016-03-02T13:52:34Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:01:39Z" target="2016-03-02T14:01:39Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="OPKC" ades="EGLL" aircraftType="B772" arcid="PIA787" eobt="2016-03-02T06:30:00Z" ifplid="AA50321160" runwayDirection="27" star="LAM3A" tldt="2016-03-02T14:43:52Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="OPKC"/>
+            <asdd:timeatpoint monitored="2016-03-02T06:17:00Z" target="2016-03-02T06:17:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:58:33Z" target="2016-03-02T14:01:33Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M40S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:19:56Z" target="2016-03-02T14:32:36Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M40S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:28:12Z" target="2016-03-02T14:43:52Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LIPZ" ades="EGLL" aircraftType="A320" arcid="BAW579V" eobt="2016-03-02T11:45:00Z" ifplid="AA50321324" runwayDirection="27" star="BIG4B" tldt="2016-03-02T14:34:58Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LIPZ"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:23:00Z" target="2016-03-02T12:23:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H2M36S" smoothedDelay="PT0H2M9S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:59:00Z" target="2016-03-02T14:01:36Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H7M0S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:18:04Z" target="2016-03-02T14:25:04Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H9M36S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:25:22Z" target="2016-03-02T14:34:58Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="OPRN" ades="EGLL" aircraftType="B772" arcid="PIA785" eobt="2016-03-02T06:35:00Z" ifplid="AA50321401" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:05:11Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="OPRN"/>
+            <asdd:timeatpoint monitored="2016-03-02T06:28:00Z" target="2016-03-02T06:28:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M44S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:17:04Z" target="2016-03-02T14:20:04Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M23S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:38:32Z" target="2016-03-02T14:53:55Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H18M23S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:46:48Z" target="2016-03-02T15:05:11Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LIML" ades="EGLL" aircraftType="A319" arcid="BAW577" ifplid="AA50321631" runwayDirection="27" ssr="2767" star="BIG4B" tldt="2016-03-02T14:31:13Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LIML"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:31:00Z" target="2016-03-02T12:31:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:49:50Z" target="2016-03-02T13:49:50Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M46S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:06:33Z" target="2016-03-02T14:21:19Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M46S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:16:27Z" target="2016-03-02T14:31:13Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EGPD" ades="EGLL" aircraftType="A320" arcid="SHT19P" ifplid="AA50321889" runwayDirection="27" sequenceNumber="69" ssr="5444" star="BNN1B" tldt="2016-03-02T14:10:59Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EGPD"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:47:00Z" target="2016-03-02T12:47:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="DCS"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:12:00Z" target="2016-03-02T13:12:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H6M30S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T14:00:16Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H6M30S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:04:29Z" target="2016-03-02T14:10:59Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EICK" ades="EGLL" aircraftType="A320" arcid="EIN712" ifplid="AA50322003" runwayDirection="27" sequenceNumber="51" ssr="7720" star="OCK2F" tldt="2016-03-02T13:44:44Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EICK"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:22:00Z" target="2016-03-02T12:22:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="EVRIN"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:41:08Z" target="2016-03-02T12:41:08Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:35:39Z" target="2016-03-02T13:35:39Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:44:44Z" target="2016-03-02T13:44:44Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="KSFO" ades="EGLL" aircraftType="B744" arcid="BAW6B" ifplid="AA50322096" runwayDirection="27" sequenceNumber="79" ssr="5404" star="OCK2F" tldt="2016-03-02T14:24:23Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="KSFO"/>
+            <asdd:timeatpoint monitored="2016-03-02T04:31:00Z" target="2016-03-02T04:31:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="BAKUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:33:43Z" target="2016-03-02T13:33:43Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H11M53S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:03:25Z" target="2016-03-02T14:15:18Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H11M53S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:12:30Z" target="2016-03-02T14:24:23Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="KSFO" ades="EGLL" aircraftType="B789" arcid="VIR42" eobt="2016-03-02T05:05:00Z" ifplid="AA50322127" runwayDirection="27" star="OCK2F" tldt="2016-03-02T15:00:02Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="KSFO"/>
+            <asdd:timeatpoint monitored="2016-03-02T05:14:00Z" target="2016-03-02T05:14:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H1M22S" type="COP">
+            <asdd:point base:name="EVRIN"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:01:32Z" target="2016-03-02T14:04:32Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H16M55S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:34:02Z" target="2016-03-02T14:50:57Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H19M55S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:40:07Z" target="2016-03-02T15:00:02Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="KLAS" ades="EGLL" aircraftType="B744" arcid="BAW274" ifplid="AA50322157" runwayDirection="27" ssr="5415" star="BNN1B" tldt="2016-03-02T14:38:43Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="KLAS"/>
+            <asdd:timeatpoint monitored="2016-03-02T05:01:00Z" target="2016-03-02T05:01:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="LIFFY"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:43:12Z" target="2016-03-02T13:43:12Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H16M26S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:11:34Z" target="2016-03-02T14:28:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H16M26S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:22:17Z" target="2016-03-02T14:38:43Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EINN" ades="EGLL" aircraftType="A320" arcid="EIN384" eobt="2016-03-02T13:05:00Z" ifplid="AA50322168" runwayDirection="27" star="OCK2F" tldt="2016-03-02T14:59:22Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="true" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="NIL" type="AOD_RUNWAY">
+            <asdd:point base:name="EINN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:57:54Z" target="2016-03-02T13:57:54Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="SLANY"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:16:55Z" target="2016-03-02T14:16:55Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:50:17Z" target="2016-03-02T14:50:17Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:59:22Z" target="2016-03-02T14:59:22Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="OMDB" ades="EGLL" aircraftType="B772" arcid="BAW108" ifplid="AA50322224" runwayDirection="27" sequenceNumber="81" ssr="3231" star="LAM3A" tldt="2016-03-02T14:27:49Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="OMDB"/>
+            <asdd:timeatpoint monitored="2016-03-02T06:41:00Z" target="2016-03-02T06:41:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:40:21Z" target="2016-03-02T13:40:21Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M55S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:01:38Z" target="2016-03-02T14:16:33Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M55S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:12:54Z" target="2016-03-02T14:27:49Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="CYVR" ades="EGLL" aircraftType="B744" arcid="BAW84" ifplid="AA50322389" runwayDirection="27" sequenceNumber="72" ssr="5401" star="BNN1B" tldt="2016-03-02T14:14:44Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="CYVR"/>
+            <asdd:timeatpoint monitored="2016-03-02T05:10:00Z" target="2016-03-02T05:10:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="DCS"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:16:37Z" target="2016-03-02T13:16:37Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H10M15S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T14:04:01Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H10M15S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:04:29Z" target="2016-03-02T14:14:44Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EIDW" ades="EGLL" aircraftType="A320" arcid="EIN162" ifplid="AA50322843" runwayDirection="27" sequenceNumber="62" ssr="5443" star="BNN1B" tldt="2016-03-02T14:00:24Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EIDW"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:28:00Z" target="2016-03-02T12:28:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="LIFFY"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:52:23Z" target="2016-03-02T12:52:23Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:49:41Z" target="2016-03-02T13:49:41Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:00:24Z" target="2016-03-02T14:00:24Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LDZA" ades="EGLL" aircraftType="A319" arcid="BAW85GA" ifplid="AA50322910" runwayDirection="27" sequenceNumber="76" ssr="2236" star="LAM3A" tldt="2016-03-02T14:20:38Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LDZA"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:51:00Z" target="2016-03-02T11:51:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="SASKI"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:36:21Z" target="2016-03-02T13:36:21Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M32S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:56:50Z" target="2016-03-02T14:09:22Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M32S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:08:06Z" target="2016-03-02T14:20:38Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="KLAX" ades="EGLL" aircraftType="A388" arcid="BAW268" eobt="2016-03-02T04:55:00Z" ifplid="AA50322925" runwayDirection="27" star="OCK2F" tldt="2016-03-02T15:15:48Z" wakeCategory="SUPER">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="KLAX"/>
+            <asdd:timeatpoint monitored="2016-03-02T05:14:00Z" target="2016-03-02T05:14:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="BAKUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:22:54Z" target="2016-03-02T14:25:54Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M52S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:52:51Z" target="2016-03-02T15:06:43Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H16M52S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:58:56Z" target="2016-03-02T15:15:48Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDM" ades="EGLL" aircraftType="A319" arcid="BAW951L" ifplid="AA50322998" runwayDirection="27" sequenceNumber="66" ssr="4141" star="LAM3A" tldt="2016-03-02T14:06:20Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDM"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:02:00Z" target="2016-03-02T12:02:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="SASKI"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:18:37Z" target="2016-03-02T13:18:37Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H1M18S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T13:55:04Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H1M18S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:06:20Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EPWA" ades="EGLL" aircraftType="A320" arcid="BAW847" ifplid="AA50323000" runwayDirection="27" ssr="2203" star="LAM3A" tldt="2016-03-02T14:37:28Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EPWA"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:02:00Z" target="2016-03-02T12:02:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M12S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:54:13Z" target="2016-03-02T13:57:13Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H9M36S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:16:36Z" target="2016-03-02T14:26:12Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M36S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:24:52Z" target="2016-03-02T14:37:28Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDL" ades="EGLL" aircraftType="A319" arcid="BAW939" ifplid="AA50323161" runwayDirection="27" sequenceNumber="61" ssr="4160" star="LAM3A" tldt="2016-03-02T13:59:09Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDL"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:26:00Z" target="2016-03-02T12:26:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="SASKI"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:08:12Z" target="2016-03-02T13:08:12Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:47:53Z" target="2016-03-02T13:47:53Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:59:09Z" target="2016-03-02T13:59:09Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EKCH" ades="EGLL" aircraftType="A321" arcid="BAW815" ifplid="AA50323181" runwayDirection="27" sequenceNumber="74" ssr="0766" star="LAM3A" tldt="2016-03-02T14:18:08Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EKCH"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:22:00Z" target="2016-03-02T12:22:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:26:46Z" target="2016-03-02T13:26:46Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M6S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T14:06:52Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M6S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:18:08Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="OMDB" ades="EGLL" aircraftType="A333" arcid="VIR401Y" ifplid="AA50323245" runwayDirection="27" sequenceNumber="67" ssr="2226" star="LAM3A" tldt="2016-03-02T14:07:35Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="OMDB"/>
+            <asdd:timeatpoint monitored="2016-03-02T06:12:00Z" target="2016-03-02T06:12:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:21:44Z" target="2016-03-02T13:21:44Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H2M33S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T13:56:19Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H2M33S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:07:35Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LHBP" ades="EGLL" aircraftType="A320" arcid="BAW869" ifplid="AA50323261" runwayDirection="27" ssr="0606" star="LAM3A" tldt="2016-03-02T14:33:43Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LHBP"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:57:00Z" target="2016-03-02T11:57:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M19S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:54:19Z" target="2016-03-02T13:57:19Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H8M36S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:13:51Z" target="2016-03-02T14:22:27Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H11M36S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:22:07Z" target="2016-03-02T14:33:43Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EGCC" ades="EGLL" aircraftType="A320" arcid="SHT3F" ifplid="AA50323341" runwayDirection="27" sequenceNumber="60" ssr="7666" star="BNN4A" tldt="2016-03-02T13:57:54Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EGCC"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:01:00Z" target="2016-03-02T13:01:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="SANBA"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:05:31Z" target="2016-03-02T13:05:31Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:47:11Z" target="2016-03-02T13:47:11Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:57:54Z" target="2016-03-02T13:57:54Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EGAC" ades="EGLL" aircraftType="A319" arcid="SHT88B" ifplid="AA50323340" runwayDirection="27" sequenceNumber="57" ssr="7652" star="BNN1B" tldt="2016-03-02T13:53:40Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EGAC"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:39:00Z" target="2016-03-02T12:39:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="MCT227017"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:01:36Z" target="2016-03-02T13:01:36Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M12S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:43:09Z" target="2016-03-02T13:42:57Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M12S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:53:52Z" target="2016-03-02T13:53:40Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LSZH" ades="EGLL" aircraftType="A320" arcid="BAW3ZL" ifplid="AA50323433" runwayDirection="27" sequenceNumber="78" ssr="3045" star="BIG4B" tldt="2016-03-02T14:23:08Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LSZH"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:36:00Z" target="2016-03-02T12:36:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:40:36Z" target="2016-03-02T13:40:36Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M52S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:59:22Z" target="2016-03-02T14:13:14Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M52S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:09:16Z" target="2016-03-02T14:23:08Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDH" ades="EGLL" aircraftType="A321" arcid="BAW969" ifplid="AA50323448" runwayDirection="27" sequenceNumber="73" ssr="1332" star="LAM3A" tldt="2016-03-02T14:16:53Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDH"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:36:00Z" target="2016-03-02T12:36:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:25:07Z" target="2016-03-02T13:25:07Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H11M51S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T14:05:37Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H11M51S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:16:53Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LEMD" ades="EGLL" aircraftType="A321" arcid="BAW45EM" ifplid="AA50323508" runwayDirection="27" sequenceNumber="53" ssr="1036" star="OCK4B" tldt="2016-03-02T13:47:44Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LEMD"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:14:00Z" target="2016-03-02T11:14:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H1M18S" type="COP">
+            <asdd:point base:name="REVTU"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:56:45Z" target="2016-03-02T12:56:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:38:39Z" target="2016-03-02T13:38:39Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:47:44Z" target="2016-03-02T13:47:44Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LSGG" ades="EGLL" aircraftType="A319" arcid="BAW729" eobt="2016-03-02T12:20:00Z" ifplid="AA50323719" runwayDirection="27" star="BIG4B" tldt="2016-03-02T14:58:47Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LSGG"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:15:00Z" target="2016-03-02T13:15:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:15:01Z" target="2016-03-02T14:18:01Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M8S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:34:45Z" target="2016-03-02T14:48:53Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H17M8S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:41:39Z" target="2016-03-02T14:58:47Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LSZH" ades="EGLL" aircraftType="A320" arcid="BAW695" eobt="2016-03-02T12:30:00Z" ifplid="AA50323726" runwayDirection="27" star="BIG4B" tldt="2016-03-02T15:07:20Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LSZH"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:17:00Z" target="2016-03-02T13:17:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:22:45Z" target="2016-03-02T14:25:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M13S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:42:13Z" target="2016-03-02T14:57:26Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H18M13S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:49:07Z" target="2016-03-02T15:07:20Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="ESSA" ades="EGLL" aircraftType="A321" arcid="BAW777C" ifplid="AA50323748" runwayDirection="27" sequenceNumber="70" ssr="2201" star="LAM3A" tldt="2016-03-02T14:12:14Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="ESSA"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:32:00Z" target="2016-03-02T11:32:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="LARDI"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:08:02Z" target="2016-03-02T13:08:02Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H7M12S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T14:00:58Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H7M12S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:12:14Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EGAC" ades="EGLL" aircraftType="A320" arcid="EIN034N" eobt="2016-03-02T12:51:00Z" ifplid="AA50323767" runwayDirection="27" star="BNN1B" tldt="2016-03-02T14:57:32Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EGAC"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:39:00Z" target="2016-03-02T13:39:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="NANTI"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:13:04Z" target="2016-03-02T14:16:04Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M4S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:31:45Z" target="2016-03-02T14:46:49Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H18M4S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:39:28Z" target="2016-03-02T14:57:32Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="ENBR" ades="EGLL" aircraftType="A319" arcid="BAW757" ifplid="AA50323894" runwayDirection="27" sequenceNumber="52" ssr="6214" star="LAM3A" tldt="2016-03-02T13:46:01Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="ENBR"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:31:00Z" target="2016-03-02T11:31:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="LARDI"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:41:45Z" target="2016-03-02T12:41:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M3S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:34:48Z" target="2016-03-02T13:34:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M3S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:46:04Z" target="2016-03-02T13:46:01Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LEBL" ades="EGLL" aircraftType="A320" arcid="BAW475" eobt="2016-03-02T12:45:00Z" ifplid="AA50323961" runwayDirection="27" star="OCK4B" tldt="2016-03-02T15:25:03Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LEBL"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:02:00Z" target="2016-03-02T13:02:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="REVTU"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:45:12Z" target="2016-03-02T14:48:12Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H9M35S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:06:23Z" target="2016-03-02T15:15:58Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M35S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:12:28Z" target="2016-03-02T15:25:03Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LFMN" ades="EGLL" aircraftType="A319" arcid="BAW31CE" ifplid="AA50323987" runwayDirection="27" sequenceNumber="56" ssr="6750" star="BIG4B" tldt="2016-03-02T13:52:25Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LFMN"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:37:00Z" target="2016-03-02T11:37:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:59:18Z" target="2016-03-02T12:59:18Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M11S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:42:42Z" target="2016-03-02T13:42:31Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M11S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:52:36Z" target="2016-03-02T13:52:25Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LFMN" ades="EGLL" aircraftType="A320" arcid="BAW347" eobt="2016-03-02T12:42:00Z" ifplid="AA50323992" runwayDirection="27" star="BIG4B" tldt="2016-03-02T15:21:18Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LFMN"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:21:00Z" target="2016-03-02T13:21:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H1M33S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:40:57Z" target="2016-03-02T14:43:57Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H10M59S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:00:25Z" target="2016-03-02T15:11:24Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M59S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:07:19Z" target="2016-03-02T15:21:18Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDT" ades="EGLL" aircraftType="A320" arcid="BAW8RM" ifplid="AA50324001" runwayDirection="27" sequenceNumber="48" ssr="1331" star="LAM3A" tldt="2016-03-02T13:38:22Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDT"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:34:00Z" target="2016-03-02T11:34:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:44:39Z" target="2016-03-02T12:44:39Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M14S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:27:20Z" target="2016-03-02T13:27:06Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M14S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:38:36Z" target="2016-03-02T13:38:22Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LFPO" ades="EGLL" aircraftType="A319" arcid="BAW335P" ifplid="AA50324010" runwayDirection="27" sequenceNumber="77" ssr="5601" star="BIG4B" tldt="2016-03-02T14:21:53Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LFPO"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:50:00Z" target="2016-03-02T12:50:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="KESAX"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:36:45Z" target="2016-03-02T13:36:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M0S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:56:59Z" target="2016-03-02T14:11:59Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:06:53Z" target="2016-03-02T14:21:53Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LEBB" ades="EGLL" aircraftType="A320" arcid="BAW467" ifplid="AA50324016" runwayDirection="27" sequenceNumber="55" ssr="1001" star="OCK4B" tldt="2016-03-02T13:51:10Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LEBB"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:53:00Z" target="2016-03-02T11:53:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="REVTU"/>
+            <asdd:timeatpoint estimated="2016-03-02T12:59:01Z" target="2016-03-02T12:59:01Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M2S" type="IAF">
+            <asdd:point base:name="OCK"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:42:07Z" target="2016-03-02T13:42:05Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="-PT0H0M2S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:51:12Z" target="2016-03-02T13:51:10Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDM" ades="EGLL" aircraftType="A320" arcid="BAW927" eobt="2016-03-02T12:55:00Z" ifplid="AA50324147" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:22:33Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDM"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:25:00Z" target="2016-03-02T13:25:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H1M34S" type="COP">
+            <asdd:point base:name="COA"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:37:33Z" target="2016-03-02T14:40:33Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H9M44S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:01:33Z" target="2016-03-02T15:11:17Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M44S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:09:49Z" target="2016-03-02T15:22:33Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EBBR" ades="EGLL" aircraftType="A319" arcid="BAW397" ifplid="AA50324176" runwayDirection="27" ssr="4426" star="LAM3A" tldt="2016-03-02T14:36:13Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EBBR"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:24:00Z" target="2016-03-02T13:24:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="COA"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:50:55Z" target="2016-03-02T13:50:55Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H10M27S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:14:30Z" target="2016-03-02T14:24:57Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H10M27S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:25:46Z" target="2016-03-02T14:36:13Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDT" ades="EGLL" aircraftType="A320" arcid="BAW983" eobt="2016-03-02T12:52:00Z" ifplid="AA50324235" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:20:03Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDT"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:29:00Z" target="2016-03-02T13:29:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M45S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:39:23Z" target="2016-03-02T14:42:23Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H7M17S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:01:30Z" target="2016-03-02T15:08:47Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H10M17S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:09:46Z" target="2016-03-02T15:20:03Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EIDW" ades="EGLL" aircraftType="A320" arcid="BAW835" ifplid="AA50324242" runwayDirection="27" ssr="7654" star="BNN1B" tldt="2016-03-02T14:52:25Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EIDW"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:30:00Z" target="2016-03-02T13:30:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="LIFFY"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:55:03Z" target="2016-03-02T13:58:03Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M31S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:27:11Z" target="2016-03-02T14:41:42Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H17M31S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:34:54Z" target="2016-03-02T14:52:25Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EHAM" ades="EGLL" aircraftType="A320" arcid="BAW435" eobt="2016-03-02T13:10:00Z" ifplid="AA50324327" runwayDirection="27" star="LAM3A" tldt="2016-03-02T14:55:43Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="true" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="NIL" type="AOD_RUNWAY">
+            <asdd:point base:name="EHAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:11:18Z" target="2016-03-02T14:11:18Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:24:46Z" target="2016-03-02T14:24:46Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:44:27Z" target="2016-03-02T14:44:27Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:55:43Z" target="2016-03-02T14:55:43Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="DNAA" ades="EGLL" aircraftType="B772" arcid="BAW82" eobt="2016-03-02T08:00:00Z" ifplid="AA50324419" runwayDirection="27" star="BIG4B" tldt="2016-03-02T14:55:23Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="DNAA"/>
+            <asdd:timeatpoint monitored="2016-03-02T08:16:00Z" target="2016-03-02T08:16:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M2S" type="COP">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:12:10Z" target="2016-03-02T14:15:10Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M7S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:31:22Z" target="2016-03-02T14:45:29Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H17M7S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:38:16Z" target="2016-03-02T14:55:23Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EDDF" ades="EGLL" aircraftType="A321" arcid="DLH9YX" eobt="2016-03-02T13:37:00Z" ifplid="AA50324634" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:12:50Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EDDF"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:32:00Z" target="2016-03-02T13:32:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="COA"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:23:34Z" target="2016-03-02T14:26:34Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M25S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:47:09Z" target="2016-03-02T15:01:34Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H17M25S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:55:25Z" target="2016-03-02T15:12:50Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EGCC" ades="EGLL" aircraftType="A319" arcid="SHT3J" eobt="2016-03-02T13:40:00Z" ifplid="AA50324736" runwayDirection="27" star="BNN4A" tldt="2016-03-02T15:03:55Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="true" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="NIL" type="AOD_RUNWAY">
+            <asdd:point base:name="EGCC"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:30:53Z" target="2016-03-02T14:30:53Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="SANBA"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:35:37Z" target="2016-03-02T14:35:37Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:53:12Z" target="2016-03-02T14:53:12Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:03:55Z" target="2016-03-02T15:03:55Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EGPF" ades="EGLL" aircraftType="A321" arcid="SHT7H" eobt="2016-03-02T13:45:00Z" ifplid="AA50324816" runwayDirection="27" star="BNN1B" tldt="2016-03-02T15:14:47Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="true" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="NIL" type="AOD_RUNWAY">
+            <asdd:point base:name="EGPF"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:22:10Z" target="2016-03-02T14:22:10Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="DCS"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:36:23Z" target="2016-03-02T14:36:23Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:04:04Z" target="2016-03-02T15:04:04Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="NIL" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:14:47Z" target="2016-03-02T15:14:47Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="OBBI" ades="EGLL" aircraftType="A332" arcid="GFA003" eobt="2016-03-02T07:10:00Z" ifplid="AA50324966" runwayDirection="27" star="LAM3A" tldt="2016-03-02T14:47:18Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="OBBI"/>
+            <asdd:timeatpoint monitored="2016-03-02T07:27:00Z" target="2016-03-02T07:27:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:04:52Z" target="2016-03-02T14:07:52Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M41S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:23:21Z" target="2016-03-02T14:36:02Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M41S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:31:37Z" target="2016-03-02T14:47:18Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LTBA" ades="EGLL" aircraftType="A332" arcid="THY60T" eobt="2016-03-02T10:55:00Z" ifplid="AA50325524" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:14:05Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LTBA"/>
+            <asdd:timeatpoint monitored="2016-03-02T11:14:00Z" target="2016-03-02T11:14:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H3M0S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:30:32Z" target="2016-03-02T14:33:32Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M48S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:49:01Z" target="2016-03-02T15:02:49Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H16M48S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:57:17Z" target="2016-03-02T15:14:05Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EFHK" ades="EGLL" aircraftType="A321" arcid="FIN839H" eobt="2016-03-02T11:55:00Z" ifplid="AA50325633" runwayDirection="27" star="LAM3A" tldt="2016-03-02T15:18:48Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EFHK"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:00:00Z" target="2016-03-02T12:00:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M34S" type="COP">
+            <asdd:point base:name="LARDI"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:22:13Z" target="2016-03-02T14:25:13Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M53S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:54:39Z" target="2016-03-02T15:07:32Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M53S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T15:02:55Z" target="2016-03-02T15:18:48Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LLBG" ades="EGLL" aircraftType="A321" arcid="BAW166" ifplid="AA50326082" runwayDirection="27" ssr="2703" star="LAM3A" tldt="2016-03-02T14:29:58Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LLBG"/>
+            <asdd:timeatpoint monitored="2016-03-02T09:00:00Z" target="2016-03-02T09:00:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:42:39Z" target="2016-03-02T13:42:39Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M50S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:52Z" target="2016-03-02T14:18:42Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M50S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:17:08Z" target="2016-03-02T14:29:58Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EHAM" ades="EGLL" aircraftType="F70" arcid="KLM1017" ifplid="AA50326209" runwayDirection="27" sequenceNumber="65" ssr="6276" star="LAM3A" tldt="2016-03-02T14:05:05Z" wakeCategory="SMALL">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EHAM"/>
+            <asdd:timeatpoint monitored="2016-03-02T12:42:00Z" target="2016-03-02T12:42:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="REFSO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:14:07Z" target="2016-03-02T13:14:07Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M3S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T13:53:49Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M3S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:05:05Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="LROP" ades="EGLL" aircraftType="A318" arcid="ROT6AR" ifplid="AA50326707" runwayDirection="27" sequenceNumber="68" ssr="3577" star="LAM3A" tldt="2016-03-02T14:09:44Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LROP"/>
+            <asdd:timeatpoint monitored="2016-03-02T10:33:00Z" target="2016-03-02T10:33:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:20:33Z" target="2016-03-02T13:20:33Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H4M42S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T13:58:28Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H4M42S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:05:02Z" target="2016-03-02T14:09:44Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EHAM" ades="EGLL" aircraftType="F70" arcid="KLM1019" eobt="2016-03-02T13:07:00Z" ifplid="AA50327108" runwayDirection="27" star="LAM3A" tldt="2016-03-02T14:51:10Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EHAM"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:41:00Z" target="2016-03-02T13:41:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="NIL" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:02:02Z" target="2016-03-02T14:05:02Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H13M53S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:26:01Z" target="2016-03-02T14:39:54Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H16M53S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:34:17Z" target="2016-03-02T14:51:10Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="OJAI" ades="EGLL" aircraftType="B788" arcid="RJA111" eobt="2016-03-02T09:20:00Z" ifplid="AA50327328" runwayDirection="27" star="LAM3A" tldt="2016-03-02T14:49:01Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="true" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="OJAI"/>
+            <asdd:timeatpoint monitored="2016-03-02T09:36:00Z" target="2016-03-02T09:36:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M42S" type="COP">
+            <asdd:point base:name="COA"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:01:51Z" target="2016-03-02T14:04:51Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H12M31S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:25:14Z" target="2016-03-02T14:37:45Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H15M31S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:33:30Z" target="2016-03-02T14:49:01Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="ZGGG" ades="EGLL" aircraftType="B788" arcid="CSN303" ifplid="AA50333543" runwayDirection="27" ssr="1175" star="LAM3A" tldt="2016-03-02T14:40:26Z" wakeCategory="HEAVY">
+          <asdd:additionalInfo crossedXMANHorizon="true" forceRNAV="false" frozen="false" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="ZGGG"/>
+            <asdd:timeatpoint monitored="2016-03-02T03:00:00Z" target="2016-03-02T03:00:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H3M0S" smoothedDelay="PT0H2M11S" type="COP">
+            <asdd:point base:name="GORLO"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:55:18Z" target="2016-03-02T13:58:18Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H11M20S" type="IAF">
+            <asdd:point base:name="LAM"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:17:50Z" target="2016-03-02T14:29:10Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H14M20S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:26:06Z" target="2016-03-02T14:40:26Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+        <asdd:sequencedFlight adep="EGPH" ades="EGLL" aircraftType="A321" arcid="SHT9W" ifplid="AA50323762" runwayDirection="27" sequenceNumber="71" ssr="4215" star="BNN1B" tldt="2016-03-02T14:13:29Z" wakeCategory="MEDIUM">
+          <asdd:additionalInfo crossedXMANHorizon="false" forceRNAV="false" frozen="true" manuallyChanged="false" minSpacingAfter="0" minSpacingBefore="0" positioning="false" predeparture="false" presequenced="false" priority="false" stackSwap="false"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="EGPH"/>
+            <asdd:timeatpoint monitored="2016-03-02T13:00:00Z" target="2016-03-02T13:00:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" smoothedDelay="PT0H0M0S" type="COP">
+            <asdd:point base:name="DCS"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:16:02Z" target="2016-03-02T13:16:02Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H9M0S" type="IAF">
+            <asdd:point base:name="BNN"/>
+            <asdd:timeatpoint estimated="2016-03-02T13:53:46Z" target="2016-03-02T14:02:46Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H9M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint estimated="2016-03-02T14:04:29Z" target="2016-03-02T14:13:29Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+      </asdd:runwaySequence>
+      <asdd:runwaySequence runway="09L/27R"/>
+      <asdd:airportStrategy>
+        <asdd:runwayStrategy strategy="S-27L" time="2016-03-02T04:41:14Z"/>
+        <asdd:runwaySpacing runway="27L" spacing="3" time="2016-03-02T13:49:53Z"/>
+        <asdd:runwaySpacing runway="09L" spacing="3" time="2016-02-28T17:48:42Z"/>
+        <asdd:runwaySpacing runway="09R" spacing="3" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacing runway="27R" spacing="3" time="2016-03-01T19:19:01Z"/>
+        <asdd:runwayDependency separation="3" time="1970-01-01T00:00:00Z">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="3" time="1970-01-01T00:00:00Z">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="3" time="1970-01-01T00:00:00Z">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="20" time="1970-01-01T00:00:00Z">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency separation="3" time="1970-01-01T00:00:00Z">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwaySpacingStrategy runway="09L" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="09R" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="27L" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="27R" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+      </asdd:airportStrategy>
+      <asdd:airportState component="ETFMS" description="" state="OK"/>
+      <asdd:airportState component="SEQUENCE" description="" state="OK"/>
+    </asdd:airport>
+    <asdd:amanState component="FPL" description="" state="OK"/>
+    <asdd:amanState component="METEO" description="" state="OK"/>
+    <asdd:amanState component="TRACK" description="" state="OK"/>
+  </asdd:arrivalSequence>
+</asdd:arrivalSequenceCollection>
