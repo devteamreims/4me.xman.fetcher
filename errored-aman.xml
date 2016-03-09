@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!-- Created by GO Publisher. Snowflake Software Ltd. (http://www.snowflakesoftware.com). -->
+<asdd:arrivalSequenceCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:asdd="http://ArrivalSequenceDataDefinitions" xmlns:fx="http://www.fixm.aero/fx/1.0" xmlns:base="http://www.fixm.aero/base/1.0" xsi:schemaLocation="http://ArrivalSequenceDataDefinitions arrivalSequence/ArrivalSequenceSchemaV1.3.xsd">
+  <asdd:arrivalSequence messageTime="2016-03-09T15:31:02Z">
+    <asdd:airport airport="EGLL" landingRate="0" eatsInForce="false" timeHorizon="PT0H22M0S" delayCredible="true">
+      <asdd:runwaySequence runway="09R/27L"/>
+      <asdd:runwaySequence runway="09L/27R"/>
+      <asdd:airportStrategy>
+        <asdd:runwayStrategy time="2014-06-09T06:23:43Z" strategy="S-27L"/>
+        <asdd:runwaySpacing time="1970-01-01T00:00:00Z" spacing="3" runway="09L"/>
+        <asdd:runwaySpacing time="1970-01-01T00:00:00Z" spacing="3" runway="09R"/>
+        <asdd:runwaySpacing time="1970-01-01T00:00:00Z" spacing="3" runway="27L"/>
+        <asdd:runwaySpacing time="1970-01-01T00:00:00Z" spacing="3" runway="27R"/>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="2">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="2">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="2">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="2">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwaySpacingStrategy runway="09L" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="09R" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="27L" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="27R" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+      </asdd:airportStrategy>
+      <asdd:airportState component="ETFMS" state="ERROR" description=""/>
+      <asdd:airportState component="SEQUENCE" state="OK" description=""/>
+    </asdd:airport>
+    <asdd:amanState state="ERROR" description="" component="FPL"/>
+    <asdd:amanState state="ERROR" description="" component="METEO"/>
+    <asdd:amanState state="ERROR" description="" component="TRACK"/>
+  </asdd:arrivalSequence>
+</asdd:arrivalSequenceCollection>
