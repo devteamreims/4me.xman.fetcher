@@ -9,7 +9,17 @@ import {stripPrefix} from 'xml2js/lib/processors';
 import fetchXmanData from './fetch';
 
 
-const parseString = Promise.promisify(parseStringCallback);
+const parseString = function () {
+  return new Promise((resolve, reject) => {
+    parseStringCallback(...arguments, (err, data) => {
+      console.log(data);
+      if(err) {
+        return reject(err);
+      }
+      resolve(data);
+    });
+  });
+};
 
 const xml2jsOptions = {
   mergeAttrs: true,
@@ -79,6 +89,35 @@ const extractAdvisory = (flight) => {
 
 };
 
+const extractAmanState = (rawJS) => {
+  const seq = extractArrivalSequence(rawJS);
+
+  const transformState = (prev, stateObj) => {
+    const component = _.get(stateObj, 'component');
+    if(!component) {
+      return prev;
+    }
+    const rest = _.omit(stateObj, 'component');
+
+    const obj = {};
+    obj[component] = _.omit(stateObj, 'component');
+
+    return Object.assign({}, prev, obj);
+  }
+
+  const status = _.get(seq, 'amanState');
+  return _.reduce(status, transformState, {});
+};
+
+const extractAirportState = (rawJS) => {
+  const seq = extractArrivalSequence(rawJS);
+
+  const airportState = _.get(seq, 'airport');
+
+  debug(airportState);
+
+  return {};
+}
 
 
 
@@ -105,9 +144,13 @@ const extractFlights = (rawJS) => {
 function formatJs(rawJS) {
   const flights = extractFlights(rawJS);
   const messageTime = extractMessageTime(rawJS);
+  const amanState = extractAmanState(rawJS);
+  const airportState = extractAirportState(rawJS);
   return {
     messageTime,
     total: flights.length,
-    flights
+    flights,
+    amanState,
+    airportState,
   };
 }
