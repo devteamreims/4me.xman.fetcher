@@ -56,7 +56,7 @@ export function xmlToJS(xmlString) {
 }
 
 
-const extractArrivalSequence = (rawJS) => _.get(rawJS, 'arrivalSequenceCollection.arrivalSequence');
+const extractArrivalSequence = (rawJS) => _.get(rawJS, 'arrivalSequenceCollection.arrivalSequence') || _.get(rawJS, 'arrivalSequence');
 const extractMessageTime = (rawJS) => _.get(extractArrivalSequence(rawJS), 'messageTime');
 const extractRunwaySequence = (rawJS) => _.get(extractArrivalSequence(rawJS), 'airport.runwaySequence');
 
@@ -67,6 +67,9 @@ const extractCop = (flight) => extractPointByType('COP')(flight);
 
 
 const extractTotalDelay = (flight) => _.get(extractPointByType('ARR_RUNWAY')(flight), 'delay');
+
+const extractDelayFromPoint = (seqPoint) => _.get(seqPoint, 'delay');
+const extractSmoothedDelayFromPoint = (seqPoint) => _.get(seqPoint, 'smoothedDelay');
 
 
 const fliesOver = (navPoint) => (flight) => {
@@ -85,8 +88,37 @@ const copAfter = (maxTimeAtCop) => (flight) => {
   return timeAtCop > maxTimeAtCop;
 };
 
-const extractAdvisory = (flight) => {
+const convertDelay = (str) => {
+  // String format : PTxHyMzS
+  // Where x, y, z represent the total delay value
+  const matchDelay = /PT(\d+)H(\d+)M(\d+)S/;
 
+  if(str === 'NIL') {
+    return -1;
+  }
+
+  if(!matchDelay.test(str)) {
+    return 0;
+  }
+
+  const [matched, hours, minutes, seconds] = matchDelay.exec(str);
+
+  return 3600*parseInt(hours) + 60*parseInt(minutes) + parseInt(seconds);
+};
+
+const extractAdvisory = (flight) => {
+  const cop = extractCop(flight);
+  const targetTime = _.get(cop, 'timeatpoint.target');
+  const estimatedTime = _.get(cop, 'timeatpoint.estimated');
+  const delay = convertDelay(extractDelayFromPoint(cop));
+  const smoothedDelay = convertDelay(extractSmoothedDelayFromPoint(cop));
+
+  return {
+    targetTime,
+    estimatedTime,
+    delay,
+    smoothedDelay,
+  };
 };
 
 const extractAmanState = (rawJS) => {
@@ -117,7 +149,7 @@ const extractAirportState = (rawJS) => {
   debug(airportState);
 
   return {};
-}
+};
 
 
 
@@ -136,7 +168,16 @@ const extractFlights = (rawJS) => {
     .filter(fliesOver('ABNUR'))
     .filter(copAfter(messageTime))
     .sortBy('tldt')
-    .map(f => _.merge({}, f, {totalDelay: extractTotalDelay(f)}))
+    .map(f => _.merge({}, {
+      ifplId: f.ifplid,
+      destination: f.ades,
+      arcid: f.arcid,
+      cop: 'ABNUR',
+      delay: convertDelay(extractTotalDelay(f)),
+      advisory: extractAdvisory(f),
+      rawObj: f,
+    }))
+    .map(f => _.omit(f, 'sequencingPoint'))
     .value();
 };
 
