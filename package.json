@@ -6,6 +6,7 @@
   "scripts": {
     "babel-node": "babel-node server.js",
     "start": "nodemon --exec npm run babel-node",
+    "dev": "DEBUG=4me.* nodemon --exec npm run babel-node",
     "test": "NODE_ENV=test mocha --compilers js:babel-register --recursive"
   },
   "author": "Benjamin Beret <benjamin.beret@gmail.com>",
