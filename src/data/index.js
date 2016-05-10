@@ -44,7 +44,12 @@ export function getLastRawData() {
 
 // Async
 export function getXmanData() {
-  return fetchXmanData().then(xmlToJS);
+  return fetchXmanData()
+    .then(xmlToJS)
+    .catch(err => {
+      debug('Fetcher error !');
+      return Promise.reject(err);
+    });
 }
 
 

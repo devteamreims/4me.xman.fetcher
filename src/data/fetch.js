@@ -3,9 +3,6 @@ const debug = d('4me.data.fetcher');
 import Promise from 'bluebird';
 import _ from 'lodash';
 
-import fs from 'fs';
-const readFile = Promise.promisify(fs.readFile);
-
 import rp from 'request-promise';
 
 const proxy = process.env.https_proxy;
