@@ -1,6 +1,6 @@
 import express from 'express';
 
-import {getLastRawData} from './data';
+import {getRawData} from './data';
 import getXmanDataRouter from './controller';
 
 export function getRoutes() {
@@ -17,7 +17,7 @@ export function getRoutes() {
 
 
 function rawController(req, res, next) {
-  getLastRawData()
+  getRawData()
     .then((xml) => {
       res.set('Content-Type', 'text/xml');
       res.send(xml)

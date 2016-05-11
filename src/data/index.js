@@ -12,7 +12,6 @@ import fetchXmanData from './fetch';
 const parseString = function () {
   return new Promise((resolve, reject) => {
     parseStringCallback(...arguments, (err, data) => {
-      console.log(data);
       if(err) {
         return reject(err);
       }
@@ -29,33 +28,18 @@ const xml2jsOptions = {
   //valueProcessors: [stripPrefix]
 };
 
-let lastRawData = {
-  lastUpdated: null,
-  lastFetched: null,
-  rawData: ''
-};
-
-export function getLastRawData() {
-  if(lastRawData.rawData !== '') {
-    return Promise.resolve(lastRawData.rawData);
-  }
+export function getRawData() {
   return fetchXmanData();
 }
 
 // Async
 export function getXmanData() {
   return fetchXmanData()
-    .then(xmlToJS)
-    .catch(err => {
-      debug('Fetcher error !');
-      return Promise.reject(err);
-    });
+    .then(xmlToJS);
 }
 
 
 export function xmlToJS(xmlString) {
-  lastRawData.lastFetched = Date.now();
-  lastRawData.rawData = xmlString;
   return parseString(xmlString, xml2jsOptions)
     .then(formatJs);
 }
