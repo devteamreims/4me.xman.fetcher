@@ -3,6 +3,10 @@ import express from 'express';
 import {getRawData} from './data';
 import getXmanDataRouter from './controller';
 
+import {
+  getStatus,
+} from './status';
+
 export function getRoutes() {
 
   let router = express.Router();
@@ -10,6 +14,8 @@ export function getRoutes() {
   router.get('/raw', rawController);
 
   router.use('/processed', getXmanDataRouter());
+
+  router.get('/status', getStatus);
 
   return router;
 };

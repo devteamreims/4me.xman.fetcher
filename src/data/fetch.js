@@ -5,6 +5,10 @@ import _ from 'lodash';
 
 import rp from 'request-promise';
 
+import {
+  setStatus,
+} from '../status';
+
 const proxy = process.env.https_proxy;
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
@@ -46,6 +50,14 @@ export default function fetch() {
       }
     });
 
-    r.then(resp => resolve(resp));
+    r.then(resolve, reject);
+  })
+  .then(resp => {
+    setStatus(resp);
+    return resp;
+  })
+  .catch(err => {
+    setStatus(_.get(err, 'response', null), _.get(err, 'message', 'Unknown error'));
+    return Promise.reject(err);
   });
 }
