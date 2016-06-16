@@ -13,6 +13,7 @@ const proxy = process.env.https_proxy;
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 let reqOpts = {
+  resolveWithFullResponse: true,
 };
 
 if(proxy !== undefined) {
@@ -54,7 +55,7 @@ export default function fetch() {
   })
   .then(resp => {
     setStatus(resp);
-    return resp;
+    return _.get(resp, 'body');
   })
   .catch(err => {
     setStatus(_.get(err, 'response', null), _.get(err, 'message', 'Unknown error'));
