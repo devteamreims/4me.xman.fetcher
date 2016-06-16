@@ -8,6 +8,7 @@ export function getStatus(req, res, next) {
 
   res.send({
     lastRequest,
+    version: process.env.npm_package_version,
   });
 }
 
