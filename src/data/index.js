@@ -71,9 +71,6 @@ const copAfter = (maxTimeAtCop) => (flight) => {
 
   const timeAtCop = Date.parse(_.get(cop, 'timeatpoint.estimated', 0));
 
-  debug(flight.arcid);
-  debug(timeAtCop + ' / ' + maxTimeAtCop);
-
   return timeAtCop > maxTimeAtCop;
 };
 
