@@ -161,7 +161,7 @@ const extractFlights = (rawJS) => {
       cop: 'ABNUR',
       delay: convertDelay(extractTotalDelay(f)),
       advisory: extractAdvisory(f),
-      rawObj: f,
+//      rawObj: f,
     }))
     .map(f => _.omit(f, 'sequencingPoint'))
     .value();
