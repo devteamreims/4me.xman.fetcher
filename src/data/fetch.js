@@ -38,7 +38,7 @@ export default function fetch() {
     // This event will occur before request() resolution;
     r.on('response', res => {
       const expectedFingerprint = process.env.CERT_FINGERPRINT;
-      console.log(res.req.connection.getPeerCertificate());
+      //console.log(res.req.connection.getPeerCertificate());
       const actualFingerprint = _.get(res.req.connection.getPeerCertificate(), 'fingerprint');
 
       // We check for actualFingerprint existence because this will only be set on the first request
