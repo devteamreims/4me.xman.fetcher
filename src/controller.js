@@ -1,3 +1,4 @@
+// @flow
 import {getXmanData} from './data';
 import express from 'express';
 

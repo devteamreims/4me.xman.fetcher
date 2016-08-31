@@ -1,3 +1,5 @@
+// @flow
+
 import d from 'debug';
 const debug = d('4me.data');
 import Promise from 'bluebird';
@@ -39,7 +41,7 @@ export function getXmanData() {
 }
 
 
-export function xmlToJS(xmlString) {
+export function xmlToJS(xmlString: string) {
   return parseString(xmlString, xml2jsOptions)
     .then(formatJs);
 }
@@ -74,7 +76,7 @@ const copAfter = (maxTimeAtCop) => (flight) => {
   return timeAtCop > maxTimeAtCop;
 };
 
-const convertDelay = (str) => {
+const convertDelay = (str :string) :number  => {
   // String format : PTxHyMzS
   // Where x, y, z represent the total delay value
   const matchDelay = /PT(\d+)H(\d+)M(\d+)S/;
