@@ -9,4 +9,4 @@ before_script:
 
 check_deps:
   script:
-    - npm run check-deps
+    - npm run check-deps --silent
