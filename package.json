@@ -7,7 +7,8 @@
     "babel-node": "babel-node server.js",
     "start": "nodemon --exec npm run babel-node",
     "dev": "DEBUG=4me.* nodemon --exec npm run babel-node",
-    "test": "NODE_ENV=test mocha --compilers js:babel-register --recursive"
+    "test": "NODE_ENV=test mocha --compilers js:babel-register --recursive",
+    "check-deps": "npm-check -p"
   },
   "author": "Benjamin Beret <benjamin.beret@gmail.com>",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "lodash": "^4.5.0",
     "morgan": "^1.6.1",
     "nodemon": "^1.8.1",
+    "npm-check": "^5.2.3",
     "request-promise": "^2.0.1",
     "xml2js": "^0.4.16"
   },
