@@ -4,6 +4,7 @@
   "description": "4ME XMAN Fetcher",
   "main": "index.js",
   "scripts": {
+    "preversion": "git add Changelog.md",
     "babel-node": "babel-node server.js",
     "start": "nodemon --exec npm run babel-node",
     "dev": "DEBUG=4me.* nodemon --exec npm run babel-node",
