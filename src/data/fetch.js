@@ -9,18 +9,11 @@ import {
   setStatus,
 } from '../status';
 
-const proxy = process.env.https_proxy;
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
-let reqOpts = {
+const reqOpts = {
   resolveWithFullResponse: true,
 };
 
-if(proxy !== undefined) {
-  reqOpts = _.merge(reqOpts, {
-    proxy
-  });
-}
 
 const request = rp.defaults(reqOpts);
 
@@ -38,8 +31,11 @@ export default function fetch() {
     // This event will occur before request() resolution;
     r.on('response', res => {
       const expectedFingerprint = process.env.CERT_FINGERPRINT;
-      //console.log(res.req.connection.getPeerCertificate());
-      const actualFingerprint = _.get(res.req.connection.getPeerCertificate(), 'fingerprint');
+
+      const actualFingerprint = _.get(
+        res.req.connection.getPeerCertificate && res.req.connection.getPeerCertificate(),
+        'fingerprint'
+      );
 
       // We check for actualFingerprint existence because this will only be set on the first request
       // Subsequent requests will use a keep-alive connection and won't have an actualFingerprint set
@@ -47,6 +43,7 @@ export default function fetch() {
         debug(`Fingerprint mismatch :`);
         debug(`Expected : ${expectedFingerprint}`);
         debug(`Returned : ${actualFingerprint}`);
+        r.abort();
         reject(`SSL fingerprint mismatch !`);
       }
     });
