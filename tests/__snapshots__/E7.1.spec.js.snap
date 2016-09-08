@@ -1,0 +1,75 @@
+exports[`test handle a properly formatted XMAN XML 1`] = `
+Object {
+  "airportState": Object {},
+  "amanState": Object {
+    "FPL": Object {
+      "description": "",
+      "state": "OK"
+    },
+    "METEO": Object {
+      "description": "",
+      "state": "OK"
+    },
+    "TRACK": Object {
+      "description": "",
+      "state": "OK"
+    }
+  },
+  "flights": Array [
+    Object {
+      "advisory": Object {
+        "delay": 0,
+        "estimatedTime": "2016-09-08T20:57:26Z",
+        "smoothedDelay": 0,
+        "targetTime": "2016-09-08T20:57:26Z"
+      },
+      "arcid": "BAW76GF",
+      "cop": "ABNUR",
+      "delay": 6,
+      "destination": "EGLL",
+      "ifplId": "AA56432762"
+    },
+    Object {
+      "advisory": Object {
+        "delay": 0,
+        "estimatedTime": "2016-09-08T21:12:04Z",
+        "smoothedDelay": 0,
+        "targetTime": "2016-09-08T21:12:04Z"
+      },
+      "arcid": "BAW357",
+      "cop": "ABNUR",
+      "delay": 0,
+      "destination": "EGLL",
+      "ifplId": "AA56432656"
+    },
+    Object {
+      "advisory": Object {
+        "delay": 0,
+        "estimatedTime": "2016-09-08T21:17:36Z",
+        "smoothedDelay": 0,
+        "targetTime": "2016-09-08T21:17:36Z"
+      },
+      "arcid": "AZA78M",
+      "cop": "ABNUR",
+      "delay": 11,
+      "destination": "EGLL",
+      "ifplId": "AA56442101"
+    },
+    Object {
+      "advisory": Object {
+        "delay": 0,
+        "estimatedTime": "2016-09-08T21:18:14Z",
+        "smoothedDelay": 0,
+        "targetTime": "2016-09-08T21:18:14Z"
+      },
+      "arcid": "BAW581",
+      "cop": "ABNUR",
+      "delay": 27,
+      "destination": "EGLL",
+      "ifplId": "AA56433061"
+    }
+  ],
+  "messageTime": "2016-09-08T20:38:31Z",
+  "total": 4
+}
+`;
