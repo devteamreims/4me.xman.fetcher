@@ -14,6 +14,8 @@ const reqOpts = {
   resolveWithFullResponse: true,
 };
 
+const MAX_REQUEST_SIZE = 1024*1024*10; // 2MB
+const MAX_REQUEST_TIME = 1000*20; // 20 seconds
 
 const request = rp.defaults(reqOpts);
 
@@ -26,6 +28,8 @@ export default function fetch() {
 
   return new Promise((resolve, reject) => {
     const r = request(xmanUrl);
+    const startTime = Date.now();
+
 
     // Response event is triggered when response headers are returned
     // This event will occur before request() resolution;
@@ -45,6 +49,36 @@ export default function fetch() {
         debug(`Returned : ${actualFingerprint}`);
         r.abort();
         reject(`SSL fingerprint mismatch !`);
+      }
+    });
+
+    // Here we check response headers for file size and reject if too large
+    r.on('response', res => {
+      const headerSize = _.get(res, 'headers.content-length', 0);
+      if(headerSize > MAX_REQUEST_SIZE) {
+        debug(`Aborting request due to MAX_REQUEST_SIZE (content-length is ${headerSize})`);
+        reject('Response exceeds MAX_REQUEST_SIZE');
+        r.abort();
+      }
+    });
+
+    let dataLen = 0;
+
+    r.on('data', chunk => {
+      dataLen += _.size(chunk);
+
+      const elapsedTime = Date.now() - startTime;
+
+      if(elapsedTime > MAX_REQUEST_TIME) {
+        debug(`Aborting request due to MAX_REQUEST_TIME : ${MAX_REQUEST_TIME}`);
+        reject('Response exceeds MAX_REQUEST_TIME');
+        r.abort();
+      }
+
+      if(dataLen > MAX_REQUEST_SIZE) {
+        debug(`Aborting request due to MAX_REQUEST_SIZE : ${MAX_REQUEST_SIZE}`);
+        reject(`Response exceeds MAX_REQUEST_SIZE`);
+        r.abort();
       }
     });
 
