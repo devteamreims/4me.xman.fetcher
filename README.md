@@ -3,3 +3,5 @@
 This software acts as a proxy translating XMAN XML format to filtered JSON.
 
 [![build status](https://gitlab.com/devteamreims/4me.xman.fetcher/badges/master/build.svg)](https://gitlab.com/devteamreims/4me.xman.fetcher/commits/master)
+
+[![coverage report](https://gitlab.com/devteamreims/4me.xman.fetcher/badges/master/coverage.svg)](https://gitlab.com/devteamreims/4me.xman.fetcher/commits/master)
