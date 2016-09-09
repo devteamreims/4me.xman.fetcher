@@ -9,7 +9,7 @@
     "babel-node": "babel-node server.js",
     "start": "nodemon --exec npm run babel-node",
     "dev": "DEBUG=4me.* nodemon --exec npm run babel-node",
-    "test": "jest",
+    "test": "jest --coverage",
     "check-deps": "npm-check --production --skip-unused"
   },
   "author": "Benjamin Beret <benjamin.beret@gmail.com>",
