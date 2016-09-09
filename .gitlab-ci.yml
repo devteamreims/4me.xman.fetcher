@@ -20,5 +20,5 @@ check_deps:
 jest:
   stage: test
   script:
-    - npm test
+    - npm test -- --coverage
 
