@@ -1,6 +1,6 @@
 import {
   xmlToJS,
-} from '../src/data/index';
+} from '../../src/data/index';
 
 import Promise from 'bluebird';
 

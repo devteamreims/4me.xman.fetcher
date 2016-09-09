@@ -1,6 +1,6 @@
 import request from 'supertest';
 import nock from 'nock';
-import app from '../index';
+import app from '../../index';
 
 test('send a request to remote server', () => {
   process.env.XMAN_URL = 'http://xmansvr';

@@ -1,6 +1,6 @@
 import request from 'supertest';
 import nock from 'nock';
-import app from '../index';
+import app from '../../index';
 
 import {readFileSync} from 'fs';
 
