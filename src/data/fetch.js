@@ -5,6 +5,9 @@ import _ from 'lodash';
 
 import rp from 'request-promise';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 import {
   setStatus,
 } from '../status';
@@ -14,8 +17,8 @@ const reqOpts = {
   resolveWithFullResponse: true,
 };
 
-const MAX_REQUEST_SIZE = 1024*1024*10; // 2MB
-const MAX_REQUEST_TIME = 1000*20; // 20 seconds
+const MAX_REQUEST_SIZE = parseInt(process.env.MAX_REQUEST_SIZE) || 1024*1024*10; // 2MB
+const MAX_REQUEST_TIME = parseInt(process.env.MAX_REQUEST_TIME) || 1000*20; // 20 seconds
 
 const request = rp.defaults(reqOpts);
 
