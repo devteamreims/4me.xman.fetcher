@@ -34,23 +34,30 @@ export default function fetch() {
 
     // Response event is triggered when response headers are returned
     // This event will occur before request() resolution;
-    r.on('response', res => {
-      const expectedFingerprint = process.env.CERT_FINGERPRINT;
+    r.on('socket', socket => {
+      socket.on('secureConnect', () => {
+        const expectedFingerprint = process.env.CERT_FINGERPRINT;
 
-      const actualFingerprint = _.get(
-        res.req.connection.getPeerCertificate && res.req.connection.getPeerCertificate(),
-        'fingerprint'
-      );
+        // nock (used for stubbing http requests) won't return a proper certificate, and just a random string
+        // Therefore, we must account for this here to make them tests go green
+        const actualFingerprint = process.env.NODE_ENV === 'test' ?
+          socket.getPeerCertificate() :
+          _.get(
+            socket.getPeerCertificate && socket.getPeerCertificate(),
+            'fingerprint'
+          );
 
-      // We check for actualFingerprint existence because this will only be set on the first request
-      // Subsequent requests will use a keep-alive connection and won't have an actualFingerprint set
-      if(expectedFingerprint && actualFingerprint && expectedFingerprint !== actualFingerprint) {
-        debug(`Fingerprint mismatch :`);
-        debug(`Expected : ${expectedFingerprint}`);
-        debug(`Returned : ${actualFingerprint}`);
-        r.abort();
-        reject(`SSL fingerprint mismatch !`);
-      }
+
+        // We check for actualFingerprint existence because this will only be set on the first request
+        // Subsequent requests will use a keep-alive connection and won't have an actualFingerprint set
+        if(actualFingerprint && expectedFingerprint && expectedFingerprint !== actualFingerprint) {
+          debug(`Fingerprint mismatch :`);
+          debug(`Expected : ${expectedFingerprint}`);
+          debug(`Returned : ${actualFingerprint}`);
+          r.abort();
+          reject(`SSL fingerprint mismatch !`);
+        }
+      });
     });
 
     // Here we check response headers for file size and reject if too large

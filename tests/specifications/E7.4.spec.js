@@ -2,12 +2,21 @@ import request from 'supertest';
 import nock from 'nock';
 import app from '../../index';
 
+import _ from 'lodash';
+
 import {readFileSync} from 'fs';
 
 const xmanData = readFileSync('./tests/xman.xml');
 
+beforeEach(() => {
+  process.env.XMAN_URL = "http://test-url";
+});
+
+afterEach(() => {
+  delete process.env.XMAN_URL;
+});
+
 test('have a request timeout', () => {
-  process.env.XMAN_URL = 'http://xmansvr';
   process.env.MAX_REQUEST_TIME = 300;
 
   const xmanRemote = nock(process.env.XMAN_URL)
@@ -18,6 +27,7 @@ test('have a request timeout', () => {
 
   return request(app)
     .get('/processed')
+    .expect(() => delete process.env.MAX_REQUEST_TIME)
     .expect(500)
     .expect(res => {
       expect(res.body.error).toMatch(/MAX_REQUEST_TIME/);
@@ -26,8 +36,6 @@ test('have a request timeout', () => {
 });
 
 test('have a maximum allowed size for server response', () => {
-  process.env.XMAN_URL = 'http://xmansvr';
-
   const xmanRemote = nock(process.env.XMAN_URL)
     .defaultReplyHeaders({
       'Content-Length': 1024*1024*1024*2, // 2 GB

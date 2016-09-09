@@ -4,7 +4,13 @@ import app from '../../index';
 
 import {readFileSync} from 'fs';
 
-process.env.XMAN_URL = 'http://xmansvr';
+beforeEach(() => {
+  process.env.XMAN_URL = "http://test-url";
+});
+
+afterEach(() => {
+  delete process.env.XMAN_URL;
+});
 
 test('present XML data in JSON format and produce a valid output', () => {
   const xmanRemote = nock(process.env.XMAN_URL)
