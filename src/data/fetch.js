@@ -23,7 +23,7 @@ export default function fetch() {
   debug(`url is ${xmanUrl}`);
   debug('Fetching XMAN data');
 
-  const MAX_REQUEST_SIZE = parseInt(process.env.MAX_REQUEST_SIZE) || 1024*1024*10; // 2MB
+  const MAX_REQUEST_SIZE = parseInt(process.env.MAX_REQUEST_SIZE) || 1024*1024*2; // 2MB
   const MAX_REQUEST_TIME = parseInt(process.env.MAX_REQUEST_TIME) || 1000*20; // 20 seconds
 
 
