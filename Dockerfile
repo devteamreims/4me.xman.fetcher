@@ -4,7 +4,7 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app
-RUN npm install --production
+RUN npm install --production --silent
 
 COPY . /usr/src/app/
 
