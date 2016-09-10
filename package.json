@@ -4,7 +4,6 @@
   "description": "4ME XMAN Fetcher",
   "main": "index.js",
   "scripts": {
-    "build:docker": "NAME=4me/xman.fetcher ./scripts/build-docker.sh",
     "preversion": "git add Changelog.md",
     "babel-node": "babel-node server.js",
     "start": "nodemon --exec npm run babel-node",
