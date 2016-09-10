@@ -24,14 +24,26 @@ jest:
     - npm install --silent
     - npm test -- --coverage
 
-build_image:
+build_release_image:
   stage: deploy
   image: docker:git
   services:
-  - docker:dind
+    - docker:dind
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
     - docker build -t $CI_REGISTRY_IMAGE:$CI_BUILD_TAG .
     - docker push $CI_REGISTRY_IMAGE:$CI_BUILD_TAG
   only:
     - tags
+
+build_image:
+  stage: deploy
+  image: docker:git
+  services:
+    - docker:dind
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_BUILD_REF_NAME .
+    - docker push $CI_REGISTRY_IMAGE:$CI_BUILD_REF_NAME
+  only:
+    - master
