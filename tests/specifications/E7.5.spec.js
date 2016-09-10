@@ -9,7 +9,7 @@ test('have a /status route', () => {
     .get('/status')
     .expect(200)
     .expect(res => {
-      expect(res.body).toMatchSnapshot();
+      expect(res.body.version).toBeDefined();
     });
 });
 
@@ -51,7 +51,6 @@ test('return proper status after unsuccessful request', () => {
         .get('/status')
         .expect(200)
         .expect(res => {
-          console.log(res.body.lastRequest);
           expect(res.body.lastRequest).toBeDefined();
           expect(res.body.lastRequest.error).not.toBe(null);
         });
