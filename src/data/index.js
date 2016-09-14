@@ -8,6 +8,7 @@ import {stripPrefix} from 'xml2js/lib/processors';
 
 import fetchXmanData from './fetch';
 
+import uuid from 'uuid';
 
 const parseString = function () {
   return new Promise((resolve, reject) => {
@@ -155,7 +156,7 @@ const extractFlights = (rawJS) => {
     .filter(copAfter(messageTime))
     .sortBy('tldt')
     .map(f => _.merge({}, {
-      ifplId: f.ifplid,
+      ifplId: f.ifplid || uuid.v4(),
       destination: f.ades,
       arcid: f.arcid,
       cop: 'ABNUR',

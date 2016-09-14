@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!-- Created by GO Publisher. Snowflake Software Ltd. (http://www.snowflakesoftware.com). --><asdd:arrivalSequenceCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:asdd="http://ArrivalSequenceDataDefinitions" xmlns:fx="http://www.fixm.aero/fx/1.0" xmlns:base="http://www.fixm.aero/base/1.0" xsi:schemaLocation="http://ArrivalSequenceDataDefinitions arrivalSequence/ArrivalSequenceSchemaV1.3.xsd">
+  <asdd:arrivalSequence messageTime="2016-09-08T20:38:31Z">
+    <asdd:airport airport="EGLL" landingRate="43" eatsInForce="false" timeHorizon="PT1H25M0S" delayCredible="true">
+      <asdd:runwaySequence runway="09R/27L">
+        <asdd:sequencedFlight ifplid="" arcid="SWR24H" ssr="3022" ades="EGLL" adep="LSZH" sequenceNumber="24" star="BIG4B" runwayDirection="27" tldt="2016-09-08T20:31:40Z" wakeCategory="MEDIUM" aircraftType="A320">
+          <asdd:additionalInfo priority="false" minSpacingBefore="0" presequenced="false" positioning="false" manuallyChanged="false" minSpacingAfter="0" forceRNAV="false" predeparture="false" stackSwap="false" frozen="true" crossedXMANHorizon="true"/>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="AOD_RUNWAY">
+            <asdd:point base:name="LSZH"/>
+            <asdd:timeatpoint monitored="2016-09-08T18:57:00Z" target="2016-09-08T18:57:00Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="COP" smoothedDelay="PT0H0M0S">
+            <asdd:point base:name="ABNUR"/>
+            <asdd:timeatpoint estimated="2016-09-08T21:57:56Z" target="2016-09-08T19:57:56Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="IAF">
+            <asdd:point base:name="BIG"/>
+            <asdd:timeatpoint estimated="2016-09-08T22:21:46Z" target="2016-09-08T20:21:46Z"/>
+          </asdd:sequencingPoint>
+          <asdd:sequencingPoint delay="PT0H0M0S" type="ARR_RUNWAY">
+            <asdd:point base:name="EGLL27L"/>
+            <asdd:timeatpoint monitored="2016-09-08T22:31:40Z" target="2016-09-08T20:31:40Z"/>
+          </asdd:sequencingPoint>
+        </asdd:sequencedFlight>
+      </asdd:runwaySequence>
+      <asdd:runwaySequence runway="09L/27R"/>
+      <asdd:airportStrategy>
+        <asdd:runwayStrategy time="2016-09-08T14:00:01Z" strategy="S-27L"/>
+        <asdd:runwaySpacing time="1970-01-01T00:00:00Z" spacing="3" runway="09L"/>
+        <asdd:runwaySpacing time="2016-08-23T23:38:28Z" spacing="3" runway="09R"/>
+        <asdd:runwaySpacing time="2016-09-08T20:07:51Z" spacing="3" runway="27L"/>
+        <asdd:runwaySpacing time="2016-09-08T09:06:28Z" spacing="3" runway="27R"/>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="3">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09L</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="3">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>09R</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="3">
+          <asdd:runway>27L</asdd:runway>
+          <asdd:runway>27R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>09L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="20">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>09R</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwayDependency time="1970-01-01T00:00:00Z" separation="3">
+          <asdd:runway>27R</asdd:runway>
+          <asdd:runway>27L</asdd:runway>
+        </asdd:runwayDependency>
+        <asdd:runwaySpacingStrategy runway="09L" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="09R" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="27L" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+        <asdd:runwaySpacingStrategy runway="27R" spacingStrategy="standard" time="1970-01-01T00:00:00Z"/>
+      </asdd:airportStrategy>
+      <asdd:airportState component="ETFMS" state="OK" description=""/>
+      <asdd:airportState component="SEQUENCE" state="OK" description=""/>
+      <asdd:nonSequenceList>
+        <asdd:nonSequencedFlight wakeCategory="MEDIUM" aircraftType="A320" ades="EGLL" adep="EGKK" arcid="BAW9250" desequenceReason="POSITIONING" ifplid="NIL" ssr="5444">
+          <asdd:additionalInfo priority="false" minSpacingBefore="0" presequenced="false" positioning="true" manuallyChanged="false" minSpacingAfter="0" forceRNAV="false" predeparture="false" stackSwap="false" frozen="false" crossedXMANHorizon="false"/>
+          <asdd:flightState state="WARN" description="IFPLID is missing" component="IFPLID"/>
+        </asdd:nonSequencedFlight>
+      </asdd:nonSequenceList>
+    </asdd:airport>
+    <asdd:amanState state="OK" description="" component="FPL"/>
+    <asdd:amanState state="OK" description="" component="METEO"/>
+    <asdd:amanState state="OK" description="" component="TRACK"/>
+  </asdd:arrivalSequence>
+</asdd:arrivalSequenceCollection>
