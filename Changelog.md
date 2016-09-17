@@ -1,5 +1,6 @@
 # Master
   * Generate unique ifplId if it's missing from the XML file [#109](devteamreims/4ME#109)
+  * Add specification tests
 
 # v0.1.3
   * Add `npm run build:docker` command to build a properly tagged docker image
