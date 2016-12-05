@@ -1,4 +1,6 @@
 # Master
+  * Move to yarn as package manager (devteamreims/4ME#141)
+  * Move to controlled docker image (devteamreims/4ME#140)
   * Generate unique ifplId if it's missing from the XML file [#109](devteamreims/4ME#109)
   * Add specification tests
 
