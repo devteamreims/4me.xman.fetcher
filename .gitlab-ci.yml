@@ -1,4 +1,4 @@
-image: registry.gitlab.com/devteamreims/node-yarn:7.2.0
+image: registry.asap.dsna.fr/4me/node-yarn:v7.2.0
 
 cache:
   untracked: true
@@ -6,17 +6,15 @@ cache:
   paths:
     - node_modules/
 
+before_script:
+  - export no_proxy=docker
+
+variables:
+  BUILD_ARGS: "--build-arg http_proxy=$http_proxy --build-arg https_proxy=$https_proxy"
+
 stages:
-  - build
   - test
   - deploy
-
-check_deps:
-  stage: build
-  script:
-    - yarn
-    - npm run check-deps --silent
-  allow_failure: true
 
 jest:
   stage: test
@@ -31,7 +29,7 @@ build_release_image:
     - docker:dind
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_BUILD_TAG .
+    - docker build $BUILD_ARGS -t $CI_REGISTRY_IMAGE:$CI_BUILD_TAG .
     - docker push $CI_REGISTRY_IMAGE:$CI_BUILD_TAG
   only:
     - tags
@@ -43,7 +41,7 @@ build_image:
     - docker:dind
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_BUILD_REF_NAME .
+    - docker build $BUILD_ARGS -t $CI_REGISTRY_IMAGE:$CI_BUILD_REF_NAME .
     - docker push $CI_REGISTRY_IMAGE:$CI_BUILD_REF_NAME
   only:
     - master

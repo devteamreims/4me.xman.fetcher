@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/devteamreims/node-yarn:7.2.0
+FROM registry.asap.dsna.fr/4me/node-yarn:v7.2.0
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app

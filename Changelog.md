@@ -1,3 +1,6 @@
+# Master
+  * Move to gitlab ASAP
+
 # v0.2.0
   * Move to yarn as package manager (devteamreims/4ME#141)
   * Move to controlled docker image (devteamreims/4ME#140)
